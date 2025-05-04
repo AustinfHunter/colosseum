@@ -4,6 +4,7 @@ jobs:
   Run-Tests:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Install Criterion and clang
         run: sudo apt install -y libcriterion-dev clang
       - name: Run Criterion Tests
