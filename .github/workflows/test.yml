@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Criterion
-        run: sudu apt install -y libcriterion-dev
+        run: sudo apt install -y libcriterion-dev
       - name: Run Criterion Tests
         run: make test
 
