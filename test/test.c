@@ -30,5 +30,5 @@ Test(colosseumtests, correct_vals) {
 		arr[i] = i+1;
 	}
 	int exp_arr[10] = {1,2,3,4,5,6,7,8,9,10};
-	cr_expect_arr_eq(arr, exp_arr, size, "Heap allocated array values should equal [1,2,3,4,5,6,7,8,9,10]");
+	cr_expect_arr_eq(arr, exp_arr, size*sizeof(int), "Heap allocated array values should equal [1,2,3,4,5,6,7,8,9,10]");
 }
